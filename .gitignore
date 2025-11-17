@@ -2,6 +2,7 @@
 .DS_Store
 .vscode/
 .idea/
+**/.DS_Store
 
 # Node / Python if present
 node_modules/
