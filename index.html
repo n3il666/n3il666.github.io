@@ -105,6 +105,50 @@
                 * denotes equal contribution
               </td>
             </tr> -->
+    <tr onmouseout="nefty_stop()" onmouseover="nefty_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='nefty_image'><video  width="160" muted autoplay loop>
+          <source src="images/nefty_after.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/nefty_before.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function nefty_start() {
+            document.getElementById('nefty_image').style.opacity = "1";
+          }
+
+          function nefty_stop() {
+            document.getElementById('nefty_image').style.opacity = "0";
+          }
+          nefty_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2603.11045">
+			<span class="papertitle">Neural Field Thermal Tomography: A Differentiable Physics Framework for Non-Destructive Evaluation
+</span>
+        </a>
+        <br>
+				<strong>Tao Zhong</strong>,
+        <a href="https://yixun-hu.github.io/">Yixun Hu</a>,
+        <a href="https://scholar.google.com/citations?user=Szg1nBQAAAAJ&hl=en">Dongzhe Zheng</a>,
+        <a href="https://sites.google.com/view/adityasood/members?authuser=0#h.kqvdn7sywamh">Aditya Sood</a>,
+        <a href="https://cablanc.github.io/">Christine Allen-Blanchette</a>
+        <br>
+        <em>Preprint</em>, 2026
+        <br>
+        <a href="https://cab-lab-princeton.github.io/nefty/">project page</a>
+        /
+        <a href="https://arxiv.org/pdf/2603.11045">arXiv</a>
+        <p></p>
+        <p>
+				We propose NeFTY, a framework that enables accurate 3D thermal tomography by combining continuous neural fields with a differentiable physics solver to recover subsurface defects from surface temperature data.
+        </p>
+      </td>
+    </tr>
+
     <tr onmouseout="lego_stop()" onmouseover="lego_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
