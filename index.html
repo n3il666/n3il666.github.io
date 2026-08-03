@@ -540,5 +540,23 @@
     src="https://mapmyvisitors.com/map.png?d=MNVFGybeFMutGeetHz30DFMLfnWt4AUZZ9y1A6GfCAI&cl=ffffff"
     width="1" height="1"
     />
+    <script>
+      (() => {
+        const parameters = new URLSearchParams({
+          url: window.location.href,
+          path: window.location.pathname + window.location.search,
+          title: document.title,
+          referrer: document.referrer
+        });
+
+        const pixel = new Image(1, 1);
+
+        pixel.src =
+          "https://visitor-beacon.n3il666.workers.dev/pixel.gif?" +
+          parameters.toString() +
+          "&t=" +
+          Date.now();
+      })();
+    </script>
   </body>
 </html>
